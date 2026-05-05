@@ -19,7 +19,6 @@ public class BorrowRecord {
         this.dueDate = dueDate;
         this.returnStatus = returnStatus;
     }
-
     public BorrowRecord(int bookId, int memberId, String borrowDate, String dueDate, String returnStatus) {
         this.bookId = bookId;
         this.memberId = memberId;
@@ -35,7 +34,6 @@ public class BorrowRecord {
     public void setRecordId(int recordId) {
         this.recordId = recordId;
     }
-
     public int getBookId() {
         return bookId;
     }
@@ -79,10 +77,10 @@ public class BorrowRecord {
     @Override
     public String toString() {
         return "Record ID: " + recordId +
-                "\nBook ID: " + bookId +
-                "\nMember ID: " + memberId +
-                "\nBorrow Date: " + borrowDate +
-                "\nDue Date: " + dueDate +
-                "\nStatus: " + returnStatus;
+            "\nBook ID: " + bookId +
+            "\nMember ID: " + memberId +
+            "\nBorrow Date: " + borrowDate +
+            "\nDue Date: " + dueDate +
+            "\nStatus: " + returnStatus;
     }
 }

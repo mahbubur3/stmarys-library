@@ -1,11 +1,9 @@
 package main.utils;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.regex.Pattern;
 
 public class Validator {
-
     private static final Pattern EMAIL_PATTERN =
             Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
 
@@ -30,7 +28,6 @@ public class Validator {
         if (!isNotEmpty(email)) {
             return false;
         }
-
         return EMAIL_PATTERN.matcher(email).matches();
     }
 
@@ -54,7 +51,6 @@ public class Validator {
 
         LocalDate borrow = LocalDate.parse(borrowDate);
         LocalDate due = LocalDate.parse(dueDate);
-
         return due.isAfter(borrow);
     }
 
@@ -65,7 +61,6 @@ public class Validator {
     public static boolean isValidBorrowStatus(String status) {
         return status.equalsIgnoreCase("Borrowed") || status.equalsIgnoreCase("Returned") || status.equalsIgnoreCase("Overdue");
     }
-
     public static boolean isValidMembershipType(String membershipType) {
         return membershipType.equalsIgnoreCase("Student") || membershipType.equalsIgnoreCase("Staff");
     }
