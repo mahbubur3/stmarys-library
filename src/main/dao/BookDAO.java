@@ -10,7 +10,7 @@ public class BookDAO {
     public boolean addBook(Book book) {
         String sql = "INSERT INTO books (title, author, category, availability_status) VALUES (?, ?, ?, ?)";
         try (Connection connection = DatabaseConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setString(1, book.getTitle());
             preparedStatement.setString(2, book.getAuthor());
             preparedStatement.setString(3, book.getCategory());
@@ -33,11 +33,11 @@ public class BookDAO {
 
             while (resultSet.next()) {
                 Book book = new Book(
-                        resultSet.getInt("book_id"),
-                        resultSet.getString("title"),
-                        resultSet.getString("author"),
-                        resultSet.getString("category"),
-                        resultSet.getString("availability_status")
+                    resultSet.getInt("book_id"),
+                    resultSet.getString("title"),
+                    resultSet.getString("author"),
+                    resultSet.getString("category"),
+                    resultSet.getString("availability_status")
                 );
 
                 books.add(book);

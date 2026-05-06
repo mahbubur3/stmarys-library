@@ -53,7 +53,7 @@ public class LibraryDashboard extends JFrame {
         tabbedPane.addTab("Borrowing Records", createBorrowRecordsPanel());
         statusLabel = new JLabel("Ready");
         statusLabel.setFont(APP_FONT);
-        statusLabel.setForeground(TEXT_COLOR);
+        statusLabel.setForeground(TEXT_COLOR);  
         statusLabel.setBorder(BorderFactory.createCompoundBorder(
             BorderFactory.createMatteBorder(1, 0, 0, 0, BORDER_COLOR),
             BorderFactory.createEmptyBorder(9, 18, 9, 18)
@@ -94,7 +94,7 @@ public class LibraryDashboard extends JFrame {
             new EmptyBorder(18, 22, 16, 22)
         ));
 
-        JLabel titleLabel = new JLabel("Hi! Welcome to St Mary's Library");
+        JLabel titleLabel = new JLabel("Hi! Welcome to St Mary's Digital Library");
         titleLabel.setFont(TITLE_FONT);
         titleLabel.setForeground(TEXT_COLOR);
         JLabel subtitleLabel = new JLabel("Manage books, members and borrowing records");
