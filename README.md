@@ -15,4 +15,4 @@ St Mary's University Library needed a way to manage book inventory, member recor
 - **Data tables** — sortable, filterable views by category, author, or member, with search functionality
 
 ## Tech Stack
-Java (JDK 22+) · SQLite · SQLite JDBC · Java Swing/JavaFX *(pick one)* · Java Collections Framework
+Java (JDK 22+) · SQLite · SQLite JDBC · Java Swing · Java Collections Framework
