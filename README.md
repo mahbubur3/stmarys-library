@@ -10,7 +10,7 @@ St Mary's University Library needed a way to manage book inventory, member recor
 - **Member management** — register and maintain student/staff borrowing records
 - **Borrowing transactions** — record loans, due dates, and returns; track status (Borrowed, Returned, Overdue)
 - **Persistent SQLite database** — all data stored and retrieved via SQLite JDBC, with CRUD operations acting directly on the database
-- **Graphical user interface** (Swing/JavaFX — *fill in which one you used*) — dashboard view with tabs/navigation for Books, Members, and Borrowing Records, plus forms and confirmation dialogues for key actions
+- **Graphical user interface** (*Swing*) — dashboard view with tabs/navigation for Books, Members, and Borrowing Records, plus forms and confirmation dialogues for key actions
 - **Input validation & error handling** — numeric ID checks, email format validation, graceful handling of invalid input and database connection failures, with clear confirmation/error messages
 - **Data tables** — sortable, filterable views by category, author, or member, with search functionality
 
